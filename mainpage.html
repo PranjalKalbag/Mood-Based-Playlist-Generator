@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="mainpagestyle.css">
+	<title>Mood Analyzer</title>
+	<h1><b><u>Mood Analyzer</u></b></h1>
+</head>
+<body>
+<br><br>
+<img src="Capture.PNG" ><br><br>
+<p>Your ability to think highly of yourself and demonstrate appropriate levels of confidence and self-belief:</p>
+<form action="/action_page.php">
+  <label for="cars">Choose your answer scale:</label>
+  <select id="scale1" name="scale">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  <option value="7">7</option>
+    <option value="8">8</option>
+<option value="9">9</option>
+  </select>
+</form>
+<p>Your imagination, artistic expression and your ability to generate novel ideas and find solutions to problems:</p>
+<form action="/action_page.php">
+  <label for="cars">Choose your answer scale:</label>
+  <select id="scale2" name="scale">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  <option value="7">7</option>
+    <option value="8">8</option>
+<option value="9">9</option>
+  </select>
+</form>
+<p>Your ability and desire to initiate, persevere with and complete effortful tasks and activities:</p>
+<form action="/action_page.php">
+  <label for="cars">Choose your answer scale:</label>
+  <select id="scale3" name="scale">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  <option value="7">7</option>
+    <option value="8">8</option>
+<option value="9">9</option>
+  </select>
+</form>
+<p>Your ability to approach situations consistently and calmly without uncontrolled emotion.</p>
+<form action="/action_page.php">
+  <label for="cars">Choose your answer scale:</label>
+  <select id="scale4" name="scale">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  <option value="7">7</option>
+    <option value="8">8</option>
+<option value="9">9</option>
+  </select>
+</form>
+<p>Your ability to demonstrate appropriate levels of self control in your thoughts and actions and to regulate your impulsivity</p>
+<form action="/action_page.php">
+  <label for="cars">Choose your answer scale:</label>
+  <select id="scale5" name="scale">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  <option value="7">7</option>
+    <option value="8">8</option>
+<option value="9">9</option>
+  </select>
+  <button type="button" onclick="register()">Register</button>
+  <span id="response"></span>
+</form>
+
+
+<script>
+function register()
+{
+var a=document.getElementById("scale1").value;
+a=parseInt(a);
+var b=document.getElementById("scale2").value;
+b=parseInt(b);
+var c=document.getElementById("scale3").value;
+c=parseInt(c);
+var d=document.getElementById("scale4").value;
+d=parseInt(d);
+var e=document.getElementById("scale5").value;
+e=parseInt(e);
+var f=document.getElementById("response");
+f.innerHTML="";
+var x= (a+b+c+d+e)/5;
+x=Math.round(x);
+console.log(x);
+
+}
+
+</script>
+<a href="songsuggester.html" class="next">Next &raquo;</a>
+</body>
+</html>
